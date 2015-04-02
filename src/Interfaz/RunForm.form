@@ -352,7 +352,6 @@
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="select ?s ?x&#xa;where{&#xa;SERVICE &lt;http://190.15.141.66:8890/sparql/&gt;{&#xa;?s a &lt;http://xmlns.com/foaf/0.1/Person&gt;}&#xa;SERVICE &lt;http://190.15.141.102:8890/sparql/&gt;{&#xa;    ?x a &lt;http://xmlns.com/foaf/0.1/Person&gt;&#xa;}&#xa;}&#xa;limit 10"/>
               </Properties>
             </Component>
           </SubComponents>

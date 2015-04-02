@@ -161,7 +161,6 @@ public class RunForm extends javax.swing.JFrame {
 
         txt_Query.setColumns(20);
         txt_Query.setRows(5);
-        txt_Query.setText("select ?s ?x\nwhere{\nSERVICE <http://190.15.141.66:8890/sparql/>{\n?s a <http://xmlns.com/foaf/0.1/Person>}\nSERVICE <http://190.15.141.102:8890/sparql/>{\n    ?x a <http://xmlns.com/foaf/0.1/Person>\n}\n}\nlimit 10");
         jScrollPane1.setViewportView(txt_Query);
 
         jLabel5.setText("Query:");
