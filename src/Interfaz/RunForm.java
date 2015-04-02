@@ -97,7 +97,7 @@ public class RunForm extends javax.swing.JFrame {
 
         txt_Query.setColumns(20);
         txt_Query.setRows(5);
-        txt_Query.setText("select ?s ?x\nwhere{\nSERVICE <http://190.15.141.66:8890/sparql/>{\n?s a <http://xmlns.com/foaf/0.1/Person>}\nSERVICE <http://190.15.141.66:8890/sparql/>{\n    ?x a <http://xmlns.com/foaf/0.1/Person>\n}\n}\nlimit 10");
+        txt_Query.setText("select ?s ?x\nwhere{\nSERVICE <http://190.15.141.66:8890/sparql/>{\n?s a <http://xmlns.com/foaf/0.1/Person>}\nSERVICE <http://190.15.141.102:8890/sparql/>{\n    ?x a <http://xmlns.com/foaf/0.1/Person>\n}\n}\nlimit 10");
         jScrollPane1.setViewportView(txt_Query);
 
         jLabel5.setText("Query:");
@@ -116,6 +116,7 @@ public class RunForm extends javax.swing.JFrame {
             }
         });
 
+        txt_Strategy.setText("SERVICE");
         txt_Strategy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_StrategyActionPerformed(evt);
@@ -204,18 +205,16 @@ public class RunForm extends javax.swing.JFrame {
                             .addComponent(btn_Strategy))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txt_Strategy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(21, 21, 21)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(jLabel5))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(3, 3, 3)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btn_Run)
-                            .addComponent(btn_Cerrar))))
-                .addContainerGap(21, Short.MAX_VALUE))
+                            .addComponent(btn_Cerrar)))
+                    .addComponent(jLabel5))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jTabbedPane3.addTab("Datos", jPanel2);

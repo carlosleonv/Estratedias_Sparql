@@ -138,22 +138,19 @@
                               <Component id="txt_Strategy" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="jScrollPane1" min="-2" pref="146" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="btn_Run" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="btn_Cerrar" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -190,7 +187,7 @@
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="select ?s ?x&#xa;where{&#xa;SERVICE &lt;http://190.15.141.66:8890/sparql/&gt;{&#xa;?s a &lt;http://xmlns.com/foaf/0.1/Person&gt;}&#xa;SERVICE &lt;http://190.15.141.66:8890/sparql/&gt;{&#xa;    ?x a &lt;http://xmlns.com/foaf/0.1/Person&gt;&#xa;}&#xa;}&#xa;limit 10"/>
+                    <Property name="text" type="java.lang.String" value="select ?s ?x&#xa;where{&#xa;SERVICE &lt;http://190.15.141.66:8890/sparql/&gt;{&#xa;?s a &lt;http://xmlns.com/foaf/0.1/Person&gt;}&#xa;SERVICE &lt;http://190.15.141.102:8890/sparql/&gt;{&#xa;    ?x a &lt;http://xmlns.com/foaf/0.1/Person&gt;&#xa;}&#xa;}&#xa;limit 10"/>
                   </Properties>
                 </Component>
               </SubComponents>
@@ -217,6 +214,9 @@
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="txt_Strategy">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SERVICE"/>
+              </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_StrategyActionPerformed"/>
               </Events>
